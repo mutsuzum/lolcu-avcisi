@@ -7,7 +7,7 @@ client.on('presenceUpdate', async (oldPresence, newPresence) => {
   const activityname = member.presence.activities[0];           // Hangi activityde olduğunu gösteriyo
 
   try {
-    if (member && activityname.name == 'League of Legends' && guild.id == '330105508935499778') {
+    if (member && activityname.name == 'League of Legends' && guild.id == '330105508935499778') {  //guild id'ye serverin id'si gelecek.
 
       client.channels.cache.get(channelid).send("lolcü yakaladım");
 
